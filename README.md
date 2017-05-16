@@ -1,7 +1,7 @@
 # pfbackup
 pfSense Backup Script (bash) for pfSense 2.3 and above. 
 
-This bash script will remotely login to your pfSense 2.3, and newer, install and export the config.xml, with encryption, and gzip the file. It will also clean up old backups xx number of days old. A daily log file is also created.
+This bash script will remotely login to your pfSense 2.3, and newer, install and export the config.xml, with encryption, and gzip the file. It will also clean up old backups xx number of days old. A daily log file is also created. This does not backup RRD data, but can be easily modified to do so (remove the text "&donotbackuprrd=yes" from line 38).
 
 Execute this script with several parameters:
 
