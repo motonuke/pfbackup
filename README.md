@@ -16,6 +16,6 @@ PROTO="http://"
 LOG="$BACKUPDIR/config-$SITE-`date +%Y%m%d`.log"
 
 
-I *highly* suggest you create a dedicated "backup" user with assigned privledges to a single page - "WebCfg - Diagnostics: Backup & Restore". Do NOT use your admin account.
+I *highly* suggest you create a dedicated "backup" user with assigned privileges to a single page - "WebCfg - Diagnostics: Backup & Restore". Do NOT use your admin account.
 
 It should also be noted, it's possible to lock yourself out of the pfSense webgui with repeated failed authentication attempts with this script. If this does happen, please see this page - https://doc.pfsense.org/index.php/Locked_out_of_the_WebGUI
