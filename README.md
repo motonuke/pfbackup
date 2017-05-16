@@ -1,7 +1,7 @@
 # pfbackup
 pfSense Backup Script (bash) for pfSense 2.3 and above. 
 
-This bash script will remotely login to your pfSense 2.3 and newer install and export the config.xml, with encryption, and gzip the file. It will also cleanup old backups xx number of days old. A daily log file is also created.
+This bash script will remotely login to your pfSense 2.3, and newer, install and export the config.xml, with encryption, and gzip the file. It will also cleanup old backups xx number of days old. A daily log file is also created.
 
 Execute this script with several parameters:
 
@@ -10,8 +10,11 @@ usage: command [ADDRESS Like 192.168.1.1] [PORT] [USER] [PASSWORD] [ENCRYPTIONKE
 Inside the script there are other variables that should be modified to reflect your environments:
 
 BACKUPDAYS="30"
+
 PROTO="http://"
+
 LOG="$BACKUPDIR/config-$SITE-`date +%Y%m%d`.log"
+
 
 I *highly* suggest you create a dedicated "backup" user with assigned privledges to a single page - "WebCfg - Diagnostics: Backup & Restore". Do NOT use your admin account.
 
