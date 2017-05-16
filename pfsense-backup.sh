@@ -1,5 +1,5 @@
 #!/bin/bash
-# Created 5/15/2017
+# Created 5/15/2017 by motonuke
 
 if (( $# != 6 )); then
 echo ""
